@@ -9,7 +9,7 @@ In order to run Finance follow the steps: </br>
   <li>Drop the folder in the IDE </li>
   <li>In the terminal: cd "folder_name"</li>
   <li> Create a free API KEY at <a href = https://iexcloud.io/cloud-login#/register/> IEX </a> </li>
-  <li> At CS50 terminal type "export API_KEY = your key" </li>
+  <li> At CS50 terminal type "export API_KEY=your key" </li>
   <li>Type "flask run"</li>
   <li>Open the link it will appear</li>
   <li>Done!</li>

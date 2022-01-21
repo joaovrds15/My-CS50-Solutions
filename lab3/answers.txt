@@ -1,0 +1,12 @@
+sort1 uses: Bubble Sort
+
+How do you know?: The fastest was sort 2, both for reversed and for sorted. So probably it was merge sort, sort1 was slower for reversed, but
+faster for sorted.Leading me to the answer.
+
+sort2 uses: Merge Sort
+
+How do you know?: Because it was the fastest 
+
+sort3 uses: Selection Sort
+
+How do you know?: It was the slowest for sorted

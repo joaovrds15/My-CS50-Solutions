@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped">
+        <thead>
+            <tr style="font-weight: bold">
+                <td scope="col">Symbol</td>
+                <td scope="col">Name</td>
+                <td scope="col">Shares</td>
+                <td scope="col">Prices</td>
+                <td scope="col">Total</td>
+            </tr>
+        </thead>
+        <tbody>
+            {% for register in registers %}
+            <tr>
+                <td>{{register.symbol}}</td>
+                <td>{{register.companyName}}</td>
+                <td>{{register.shares}}</td>
+                <td>{{register.price | usd }}</td>
+                <td>{{register.totalCost | usd}}</td>
+            </tr>
+            {% endfor %}
+            <tr>
+                <td>CASH<td>
+                <td></td>
+                <td></td>
+                <td>{{cash | usd}}</td>
+            </tr>
+        </tbody>
+        <tfooter>
+            <tr style="font-weight:bold" class="table-light">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>{{totalCash | usd }}</td>
+            </tr>
+        </tfooter>
+    </table>
+{% endblock %}

@@ -1,0 +1,45 @@
+body{
+    background-color:#303030;
+}
+.mb-3{
+    max-width:500px;
+    margin-left:30%;
+}
+.nav-link{
+    color:black;
+}
+.nav-link:hover{
+    text-decoration:underline;
+    color: black;
+
+}
+.content{
+    color:white;
+
+}
+.form-label{
+    margin-top:5px;
+}
+form{
+    max-width:400px;
+    margin-right:auto;
+    margin-left:auto;
+    text-align:center;
+    margin-top:80px;
+}
+input, textarea{
+    padding:10px;
+    margin:10px 0px;
+    border:0;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.6);
+    border-radius:10px;
+    width:100%;
+}
+#submit{
+    width:200px;
+    height:50px;
+    color:white;
+    margin-top:10px;
+    background-color:black;
+    border-radius:10px;
+}

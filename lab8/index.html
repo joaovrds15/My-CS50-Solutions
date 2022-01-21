@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+
+        <script>
+            // TODO: Add code to check answers to questions
+            function getId(btn){
+
+                if(btn.id == "option-3"){
+                    btn.style.backgroundColor = 'green';
+                    correct.innerText = "Correct"
+                }
+                else{
+                    btn.style.backgroundColor = 'red';
+                    correct.innerText = "Incorrect";
+                }
+            }
+            function checkAnswer(){
+                let result = document.querySelector("#answer").value;
+                let input = document.querySelector("#answer");
+                if(result.localeCompare("World Wide Web") == 0 || result.localeCompare("World wide web") == 0 || result.localeCompare("world wide web") == 0){
+                    freeResponse.innerText = "Correct";
+                    input.style.color = "green";
+                }
+                else{
+                    freeResponse.innerText = "Incorrect";
+                    input.style.color = "red";
+                }
+            }
+
+
+        </script>
+
+    </head>
+    <body>
+
+        <div class="jumbotron">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+
+                <h3>What is the capital of Brazil?</h3>
+                <h4 id = 'correct'></h4>
+                <form >
+                    <button type = "button" id = "option-1" onClick = "getId(this)">São Paulo</button>
+                    <button type = "button" id = "option-2" onClick = getId(this) >Rio De Janeiro</button>
+                    <button type = "button" id = "option-3" onClick = "getId(this)" >Brasilia</button>
+                </form>
+
+
+
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>What does “www” stand for in a website browser?</h3>
+                <h4 id ="freeResponse" ></h4>
+                <form>
+                    <input type = "text" id = "answer">
+                    <button type = "button" onClick = checkAnswer(this)>Submit</button>
+                </form>
+                <!-- TODO: Add free response question here -->
+
+            </div>
+
+        </div>
+    </body>
+</html>

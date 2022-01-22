@@ -1,7 +1,8 @@
 # My CS50-2021 Course Problem Sets Solutions
 
 CS50 is a subject taught at Harvard and available for free on the internet. More information at <a href="https://cs50.harvard.edu/x/2021/"> CS50 </a> </br>
-Most applications use features available in <a href="https://ide.cs50.io/">CS50 IDE </a> I will write a step-by-step of how to run them in the IDE inside each READ-ME
+Most applications use features available in <a href="https://ide.cs50.io/">CS50 IDE </a> I will write a step-by-step of how to run them in the IDE inside each READ-ME </br>
+I am also reviewing the code, so if you find strange comments or variable names don't mind them !
 
 <h3> Weeks: <h3>
 

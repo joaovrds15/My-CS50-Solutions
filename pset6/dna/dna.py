@@ -31,7 +31,6 @@ def main():
         print("No match")
 
 
-#Probably we are facing an error in this function cause its returning differents than it should
 def calculateAlleles(sequence,allele):
     alleleLenght = len(allele)
     count = 0
